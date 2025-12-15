@@ -1,0 +1,109 @@
+/* Global Reset */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Base / Page Layout */
+
+body {
+  background-color: #f5f6f7;
+  color: #1b1b32;
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2rem 1rem 3rem;
+}
+
+
+/* Page Title and Subtitle */
+
+#title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: #3b3b4f;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+/* Image Section */
+
+#img-div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  margin: 0 auto 2rem;
+  padding: 1rem;
+}
+
+img {
+  display: block;
+}
+
+#image {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#img-caption {
+  color: #4b4b63;
+  font-size: 0.95rem;
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+
+/* Tribute Content */
+
+#tribute-info {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 1.25rem;
+}
+
+#tribute-info h2,
+#tribute-info h3 {
+  color: #1b1b32;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+#tribute-info h2 {
+  border-bottom: 2px solid #dfdfe2;
+  padding-bottom: 0.25rem;
+}
+
+
+/* External Link Section */
+
+.more-info {
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#tribute-link {
+  color: #0a0a23;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#tribute-link:hover,
+#tribute-link:focus {
+  text-decoration: none;
+}
