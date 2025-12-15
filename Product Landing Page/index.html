@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page metadata, responsive setup, and external stylesheet -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>AeroPress | Smooth Coffee Anywhere</title>
+  </head>
+
+  <body>
+    <!-- Header containing brand logo and primary navigation -->
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://aeropress.com/cdn/shop/files/Logo_small.svg?v=1700709111"
+        alt="AeroPress logo"
+      />
+
+      <!-- Navigation links scroll to sections within the page -->
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#how-it-works">How It Works</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section introduces the product and value proposition -->
+      <section id="hero">
+        <h1>Rich, smooth coffee—anywhere.</h1>
+        <p>
+          The AeroPress is a compact coffee maker loved for its fast brew time,
+          low bitterness, and easy cleanup. Great at home, perfect for travel.
+        </p>
+        <a href="#signup">Get updates</a>
+      </section>
+
+      <!-- Feature highlights explaining key benefits -->
+      <section id="features">
+        <h2>Built for better coffee</h2>
+
+        <div class="features-list">
+          <article class="feature">
+            <h3>Fast brewing</h3>
+            <p>
+              Brew a cup in minutes. No long wait times—just a quick, repeatable
+              process that fits into any morning.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Smooth taste</h3>
+            <p>
+              Paper micro-filters help reduce grit and bitterness for a cleaner,
+              sweeter cup compared to many immersion methods.
+            </p>
+          </article>
+
+          <article class="feature">
+            <h3>Portable & durable</h3>
+            <p>
+              Lightweight and travel-friendly. Toss it in a bag for camping,
+              office coffee, or a weekend trip.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Demonstration section with embedded instructional video -->
+      <section id="how-it-works">
+        <h2>The Ultimate AeroPress Technique</h2>
+        <p>
+          This method, developed and tested by coffee expert James Hoffmann,
+          focuses on consistency, simplicity, and a smooth final cup.
+        </p>
+
+        <!-- Embedded YouTube video explaining the brewing technique -->
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/j6VlT_jUVPc"
+          title="The Ultimate AeroPress Technique by James Hoffman"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <!-- Step-by-step brewing instructions -->
+        <ol>
+          <li>
+            <strong>Measure and grind.</strong>
+            Use 11g of coffee, ground at the finer end of medium. Adjust grind
+            size and dose slightly for darker roasts.
+          </li>
+
+          <li>
+            <strong>Add coffee and water.</strong>
+            Insert a paper filter into the cap (no rinsing needed). Add coffee to
+            the brewer, then pour 200g of freshly boiled water, ensuring all
+            grounds are evenly saturated.
+          </li>
+
+          <li>
+            <strong>Seal and steep.</strong>
+            Start a timer and immediately insert the plunger about 1cm into the
+            top to create a vacuum. Let steep for 2 minutes.
+          </li>
+
+          <li>
+            <strong>Swirl.</strong>
+            Gently swirl the brewer to redistribute the grounds, then wait
+            another 30 seconds.
+          </li>
+
+          <li>
+            <strong>Press and enjoy.</strong>
+            Press slowly and steadily until complete. Serve and enjoy a clean,
+            balanced cup.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Pricing section outlining available products and bundles -->
+      <section id="pricing">
+        <h2>Choose your setup</h2>
+
+        <div class="pricing-cards">
+          <article class="card">
+            <h3>AeroPress Brewer</h3>
+            <p class="price">Starting at $39</p>
+            <ul>
+              <li>Classic AeroPress coffee maker</li>
+              <li>Includes scoop, stirrer, and filters</li>
+              <li>Compact, durable, easy to clean</li>
+            </ul>
+            <a href="#signup">Get notified</a>
+          </article>
+
+          <article class="card">
+            <h3>Travel & Starter Bundles</h3>
+            <p class="price">From $49</p>
+            <ul>
+              <li>Brewer plus travel-friendly extras</li>
+              <li>Filter packs and accessories</li>
+              <li>Ideal for beginners or on-the-go brewing</li>
+            </ul>
+            <a href="#signup">Get notified</a>
+          </article>
+
+          <article class="card">
+            <h3>Accessories & Upgrades</h3>
+            <p class="price">Various options</p>
+            <ul>
+              <li>Paper or reusable metal filters</li>
+              <li>Travel grinder and storage accessories</li>
+              <li>Replacement parts available</li>
+            </ul>
+            <a href="#signup">Get notified</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Email signup form for updates and promotions -->
+      <section id="signup">
+        <h2>Get launch deals & brew tips</h2>
+        <p>
+          Enter your email to get occasional updates, brewing recipes, and
+          special offers.
+        </p>
+
+        <form
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+          method="POST"
+        >
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email for updates"
+            required
+          />
+          <input id="submit" type="submit" value="Sign Up" />
+        </form>
+      </section>
+
+      <!-- Footer containing brand reinforcement -->
+      <footer>
+        <img
+          id="footer-img"
+          src="https://aeropress.com/cdn/shop/files/aeropress-logo-with-icon_250x.png?v=1731022031"
+          alt="AeroPress logo"
+        />
+      </footer>
+    </main>
+  </body>
+</html>
