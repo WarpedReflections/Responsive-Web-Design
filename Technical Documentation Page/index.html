@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page metadata and external stylesheet -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Git and GitHub Basics</title>
+  </head>
+
+  <body>
+    <!-- Fixed/side navigation for quick jumps to each documentation section -->
+    <nav id="navbar">
+      <header>Git and GitHub Basics</header>
+
+      <!-- Nav links use fragment identifiers to scroll to matching section ids -->
+      <a class="nav-link" href="#Introduction_to_Version_Control">
+        Introduction to Version Control
+      </a>
+      <a class="nav-link" href="#Installing_Git">Installing Git</a>
+      <a class="nav-link" href="#Core_Workflow">Core Workflow</a>
+      <a class="nav-link" href="#Branching_and_Merging">Branching and Merging</a>
+      <a class="nav-link" href="#Working_with_Remotes">Working with Remotes</a>
+      <a class="nav-link" href="#Common_Mistakes_and_Fixes">
+        Common Mistakes and Fixes
+      </a>
+    </nav>
+
+    <!-- Main documentation content container (pairs with navbar links) -->
+    <main id="main-doc">
+      <!-- Each section is a standalone topic block for the documentation page -->
+      <section class="main-section" id="Introduction_to_Version_Control">
+        <header>Introduction to Version Control</header>
+        <p>
+          Version control is a system that tracks changes to files over time. It allows
+          developers to save different versions of a project and return to earlier states
+          when needed.
+        </p>
+        <p>
+          Using version control also makes collaboration easier by allowing multiple people
+          to work on the same codebase without conflicts.
+        </p>
+        <ul>
+          <li>Tracks changes to files</li>
+          <li>Prevents accidental data loss</li>
+          <li>Supports team collaboration</li>
+        </ul>
+
+        <!-- Code examples use pre+code to preserve spacing and improve readability -->
+        <pre><code>git status</code></pre>
+      </section>
+
+      <section class="main-section" id="Installing_Git">
+        <header>Installing Git</header>
+        <p>
+          Git must be installed before it can be used for version control. The installation
+          process depends on your operating system.
+        </p>
+        <p>
+          After installation, Git can be accessed through the command line or terminal.
+        </p>
+        <ul>
+          <li>Windows users can install Git using Git Bash</li>
+          <li>macOS users can install Git with Homebrew</li>
+          <li>Linux users can install Git via package managers</li>
+        </ul>
+        <pre><code>git --version</code></pre>
+      </section>
+
+      <section class="main-section" id="Core_Workflow">
+        <header>Core Workflow</header>
+        <p>
+          The core Git workflow consists of initializing a repository, staging changes, and
+          committing those changes to the project history.
+        </p>
+        <p>
+          This workflow ensures that every change is intentional and recorded with a message
+          explaining what was modified.
+        </p>
+        <ul>
+          <li>Initialize a repository</li>
+          <li>Stage file changes</li>
+          <li>Commit changes with a message</li>
+        </ul>
+        <pre><code>git init
+git add .
+git commit -m "Initial commit"</code></pre>
+      </section>
+
+      <section class="main-section" id="Branching_and_Merging">
+        <header>Branching and Merging</header>
+        <p>
+          Branching allows developers to create separate lines of development without
+          affecting the main project code.
+        </p>
+        <p>
+          Merging combines changes from one branch into another, typically after a feature
+          has been completed and tested.
+        </p>
+        <ul>
+          <li>Create branches for new features</li>
+          <li>Switch between branches</li>
+          <li>Merge completed work</li>
+        </ul>
+        <pre><code>git branch
+git checkout -b feature-branch</code></pre>
+      </section>
+
+      <section class="main-section" id="Working_with_Remotes">
+        <header>Working with Remotes</header>
+        <p>
+          Remote repositories allow developers to store and share their Git projects online
+          using platforms like GitHub.
+        </p>
+        <p>
+          By connecting a local repository to a remote one, changes can be pushed and pulled
+          between team members.
+        </p>
+        <ul>
+          <li>Add a remote repository</li>
+          <li>Push local changes</li>
+          <li>Pull updates from others</li>
+        </ul>
+        <pre><code>git remote add origin https://github.com/user/repo.git
+git push origin main</code></pre>
+      </section>
+
+      <section class="main-section" id="Common_Mistakes_and_Fixes">
+        <header>Common Mistakes and Fixes</header>
+        <p>
+          Mistakes are common when learning Git, such as committing the wrong files or writing
+          incorrect commit messages.
+        </p>
+        <p>
+          Git provides tools that allow users to undo or fix mistakes without losing their work.
+        </p>
+        <ul>
+          <li>Undo staged changes</li>
+          <li>Amend recent commits</li>
+          <li>Restore deleted files</li>
+        </ul>
+        <pre><code>git reset
+git checkout -- filename</code></pre>
+      </section>
+    </main>
+  </body>
+</html>
